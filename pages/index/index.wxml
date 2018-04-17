@@ -1,0 +1,249 @@
+<view class="ident-wrap">
+    <view class="ident">
+        <icon type="clear" color="black"></icon>
+        <text class="title">认证领星币</text>
+        <text class="desc">
+            实名认证后可免费获得星币，可用来联系明星经纪人等其他权益。
+        </text>
+        <navigator url="" redirect="false" hover-class="navigator-hover" open-type="navigate">立即认证</navigator>
+    </view>
+</view>
+<view class="search-header">
+    <navigator url="../search/search">
+        <icon type="search" size="12"></icon>
+        <text>搜索明星</text>
+    </navigator>
+</view>
+<view class="banner-wrap">
+    <swiper interval="2500" duration="300" autoplay="true" circular="true" indicator-color="white" indicator-active-color="#3323B2" bindchange="swiperChange">
+        <block wx:for="{{bannerImgs}}">
+            <swiper-item>
+                <image  mode="aspectFill" src="{{item.url}}" />
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="dots">    
+        <block wx:for="{{bannerImgs}}">    
+            <view class="dot {{index == currentSwiper ? 'active' : ''}}"></view>    
+        </block>    
+    </view> 
+</view>
+<view class="category">
+    <navigator url="" redirect="false" hover-class="navigator-hover" open-type="navigate">
+        <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523877086276&di=72f70e807b31820766636c64a5467ad6&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F4d086e061d950a7b9138ff1000d162d9f3d3c9d1.jpg" alt="" mode="aspectFill" />
+        <view>
+            <text class="zh">歌手</text>
+            <text class="en">Singer</text>
+        </view>
+    </navigator>
+    <navigator url="" redirect="false" hover-class="navigator-hover" open-type="navigate">
+        <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523877086276&di=72f70e807b31820766636c64a5467ad6&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F4d086e061d950a7b9138ff1000d162d9f3d3c9d1.jpg" alt="" mode="aspectFill" />
+        <view>
+            <text class="zh">演员</text>
+            <text class="en">Actor</text>
+        </view>
+    </navigator>
+    <navigator url="" redirect="false" hover-class="navigator-hover" open-type="navigate">
+        <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523877086276&di=72f70e807b31820766636c64a5467ad6&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F4d086e061d950a7b9138ff1000d162d9f3d3c9d1.jpg" alt="" mode="aspectFill" />
+        <view>
+            <text class="zh">综艺</text>
+            <text class="en">Concert</text>
+        </view>
+    </navigator>
+    <navigator url="" redirect="false" hover-class="navigator-hover" open-type="navigate">
+        <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523877086276&di=72f70e807b31820766636c64a5467ad6&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F4d086e061d950a7b9138ff1000d162d9f3d3c9d1.jpg" alt="" mode="aspectFill" />
+        <view>
+            <text class="zh">其他</text>
+            <text class="en">Other</text>
+        </view>
+    </navigator>
+</view>
+<view class="subject">
+    <header>
+        <text>鲜肉系</text>
+        <navigator url="" redirect="false" hover-class="navigator-hover" open-type="navigate">更多</navigator>
+    </header>
+    <scroll-view class="slider-wrap" scroll-x>
+        <ul>
+            <li>
+                <navigator url="" redirect="false" hover-class="navigator-hover" open-type="navigate">
+                    <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523877086276&di=72f70e807b31820766636c64a5467ad6&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F4d086e061d950a7b9138ff1000d162d9f3d3c9d1.jpg" alt="" mode="aspectFill" />
+                    <view class="tel icon">28</view>
+                    <view class="desc">
+                        <text class="name">张三</text>
+                        <view>
+                            <text>报价需认证</text>
+                            <text class="num icon">789</text>
+                        </view>
+                    </view>
+                </navigator>
+            </li>
+            <li>
+                <navigator url="" redirect="false" hover-class="navigator-hover" open-type="navigate">
+                    <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523877086276&di=72f70e807b31820766636c64a5467ad6&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F4d086e061d950a7b9138ff1000d162d9f3d3c9d1.jpg" alt="" mode="aspectFill" />
+                    <view class="tel">28</view>
+                    <view class="desc">
+                        <text class="name">张三</text>
+                        <view>
+                            <text>报价需认证</text>
+                            <text class="num">789</text>
+                        </view>
+                    </view>
+                </navigator>
+            </li>
+            <li>
+                <navigator url="" redirect="false" hover-class="navigator-hover" open-type="navigate">
+                    <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523877086276&di=72f70e807b31820766636c64a5467ad6&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F4d086e061d950a7b9138ff1000d162d9f3d3c9d1.jpg" alt="" mode="aspectFill" />
+                    <view class="tel">28</view>
+                    <view class="desc">
+                        <text class="name">张三</text>
+                        <view>
+                            <text>报价需认证</text>
+                            <text class="num">789</text>
+                        </view>
+                    </view>
+                </navigator>
+            </li>
+            <li>
+                <navigator url="" redirect="false" hover-class="navigator-hover" open-type="navigate">
+                    <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523877086276&di=72f70e807b31820766636c64a5467ad6&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F4d086e061d950a7b9138ff1000d162d9f3d3c9d1.jpg" alt="" mode="aspectFill" />
+                    <view class="tel">28</view>
+                    <view class="desc">
+                        <text class="name">张三</text>
+                        <view>
+                            <text>报价需认证</text>
+                            <text class="num">789</text>
+                        </view>
+                    </view>
+                </navigator>
+            </li>
+        </ul>
+
+    </scroll-view>
+</view>
+<view class="subject">
+    <header>
+        <text>鲜肉系</text>
+        <navigator url="" redirect="false" hover-class="navigator-hover" open-type="navigate">更多</navigator>
+    </header>
+    <scroll-view class="slider-wrap" scroll-x>
+        <ul>
+            <li>
+                <navigator url="" redirect="false" hover-class="navigator-hover" open-type="navigate">
+                    <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523877086276&di=72f70e807b31820766636c64a5467ad6&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F4d086e061d950a7b9138ff1000d162d9f3d3c9d1.jpg" alt="" mode="aspectFill" />
+                    <view class="tel icon">28</view>
+                    <view class="desc">
+                        <text class="name">张三</text>
+                        <view>
+                            <text>报价需认证</text>
+                            <view class="num icon">79989</view>
+                        </view>
+                    </view>
+                </navigator>
+            </li>
+            <li>
+                <navigator url="" redirect="false" hover-class="navigator-hover" open-type="navigate">
+                    <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523877086276&di=72f70e807b31820766636c64a5467ad6&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F4d086e061d950a7b9138ff1000d162d9f3d3c9d1.jpg" alt="" mode="aspectFill" />
+                    <view class="tel">28</view>
+                    <view class="desc">
+                        <text class="name">张三</text>
+                        <view>
+                            <text>报价需认证</text>
+                            <text class="num">789</text>
+                        </view>
+                    </view>
+                </navigator>
+            </li>
+            <li>
+                <navigator url="" redirect="false" hover-class="navigator-hover" open-type="navigate">
+                    <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523877086276&di=72f70e807b31820766636c64a5467ad6&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F4d086e061d950a7b9138ff1000d162d9f3d3c9d1.jpg" alt="" mode="aspectFill" />
+                    <view class="tel">28</view>
+                    <view class="desc">
+                        <text class="name">张三</text>
+                        <view>
+                            <text>报价需认证</text>
+                            <text class="num">789</text>
+                        </view>
+                    </view>
+                </navigator>
+            </li>
+            <li>
+                <navigator url="" redirect="false" hover-class="navigator-hover" open-type="navigate">
+                    <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523877086276&di=72f70e807b31820766636c64a5467ad6&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F4d086e061d950a7b9138ff1000d162d9f3d3c9d1.jpg" alt="" mode="aspectFill" />
+                    <view class="tel">28</view>
+                    <view class="desc">
+                        <text class="name">张三</text>
+                        <view>
+                            <text>报价需认证</text>
+                            <text class="num">789</text>
+                        </view>
+                    </view>
+                </navigator>
+            </li>
+        </ul>
+
+    </scroll-view>
+</view>
+<view class="subject">
+    <header>
+        <text>鲜肉系</text>
+        <navigator url="" redirect="false" hover-class="navigator-hover" open-type="navigate">更多</navigator>
+    </header>
+    <scroll-view class="slider-wrap" scroll-x>
+        <ul>
+            <li>
+                <navigator url="" redirect="false" hover-class="navigator-hover" open-type="navigate">
+                    <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523877086276&di=72f70e807b31820766636c64a5467ad6&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F4d086e061d950a7b9138ff1000d162d9f3d3c9d1.jpg" alt="" mode="aspectFill" />
+                    <view class="tel icon">28</view>
+                    <view class="desc">
+                        <text class="name">张三</text>
+                        <view>
+                            <text>报价需认证</text>
+                            <text class="num">789</text>
+                        </view>
+                    </view>
+                </navigator>
+            </li>
+            <li>
+                <navigator url="" redirect="false" hover-class="navigator-hover" open-type="navigate">
+                    <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523877086276&di=72f70e807b31820766636c64a5467ad6&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F4d086e061d950a7b9138ff1000d162d9f3d3c9d1.jpg" alt="" mode="aspectFill" />
+                    <view class="tel">28</view>
+                    <view class="desc">
+                        <text class="name">张三</text>
+                        <view>
+                            <text>报价需认证</text>
+                            <text class="num">789</text>
+                        </view>
+                    </view>
+                </navigator>
+            </li>
+            <li>
+                <navigator url="" redirect="false" hover-class="navigator-hover" open-type="navigate">
+                    <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523877086276&di=72f70e807b31820766636c64a5467ad6&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F4d086e061d950a7b9138ff1000d162d9f3d3c9d1.jpg" alt="" mode="aspectFill" />
+                    <view class="tel">28</view>
+                    <view class="desc">
+                        <text class="name">张三</text>
+                        <view>
+                            <text>报价需认证</text>
+                            <text class="num">789</text>
+                        </view>
+                    </view>
+                </navigator>
+            </li>
+            <li>
+                <navigator url="" redirect="false" hover-class="navigator-hover" open-type="navigate">
+                    <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523877086276&di=72f70e807b31820766636c64a5467ad6&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F4d086e061d950a7b9138ff1000d162d9f3d3c9d1.jpg" alt="" mode="aspectFill" />
+                    <view class="tel">28</view>
+                    <view class="desc">
+                        <text class="name">张三</text>
+                        <view>
+                            <text>报价需认证</text>
+                            <text class="num">789</text>
+                        </view>
+                    </view>
+                </navigator>
+            </li>
+        </ul>
+
+    </scroll-view>
+</view>

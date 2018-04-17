@@ -1,0 +1,44 @@
+<view class="search-header">
+    <view class="search-wrap icon">
+        <input value="" type="text"  placeholder="搜索明星" placeholder-style="color:#999999;font-size:28rpx;" placeholder-class=""  maxlength="20" />
+    </view>
+</view>
+<view class="hot box" wx:if="{{false}}">
+    <text class="title">热搜</text>
+    <ul>
+        <li>李建</li><li>潘玮柏</li><li>张碧晨</li>
+        <li>李建</li><li>潘玮柏</li><li>张碧晨</li>
+        <li>李建</li><li>潘玮柏</li><li>张碧晨</li>
+        <li>李建</li><li>潘玮柏</li><li>张碧晨</li>
+    </ul>
+</view>
+<view class="recent box" wx:if="{{false}}">
+    <text class="title">最近搜索</text>
+    <ul>
+        <li>李建</li><li>潘玮柏</li><li>张碧晨</li>
+        <li>李建</li><li>潘玮柏</li><li>张碧晨</li>
+        <li>李建</li><li>潘玮柏</li><li>张碧晨</li>
+    </ul>
+    <text class="clear icon">清空搜索记录</text>
+    <view class="none">
+        <image src="../../images/nosearch.png"></image>
+        <text>暂无搜索记录</text>
+    </view>
+</view>
+<ul class="cat-nav">
+    <li>全部</li><li class="active">歌手</li><li>演员</li><li>综艺</li><li>其他</li>
+</ul>
+<block>
+    <view class="star">
+        <view class="photo"><image src="" mode="aspectFill" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1523877086276&di=72f70e807b31820766636c64a5467ad6&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F4d086e061d950a7b9138ff1000d162d9f3d3c9d1.jpg"></image></view>
+        <view class="detail">
+            <view class="top">
+                <view class="name-wrap"><text class="name">鹿晗</text><text class="dailed icon">2人已拨打</text></view>
+                <view><text class="key">经纪人:</text><text class="value">孙杰</text></view>
+                <view><text class="key">手机号:</text><text class="value">8888888</text></view>
+                <text class="ident">查看报价需认证</text>
+            </view>
+            <view class="dail">拨打电话</view>
+        </view>
+    </view>
+</block>
